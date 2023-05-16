@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>webapp</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	
+	
+	<div>
+		<div>
+			<div>
+				<div>
+					<a href="#"><img></a>
+				</div>
+			
+			
+			</div>
+
+			<div>
+                
+				<form method="post">
+				{% csrf_token %}					
+					<button>
+						Execute
+					</button>
+				</form>
+
+				{% if message %}
+				<p>{{message}}</p>
+			    {% endif %}
+		
+			</div>
+				
+		</div>
+	</div>
+
+</body>
+</html>
